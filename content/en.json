@@ -60,7 +60,7 @@
         {
           "type": "ul",
           "items": [
-            "<strong>Read images / video</strong> — to open photos and videos you select (MediaStore and the system document picker).",
+            "<strong>Photos / videos via system picker</strong> — the app opens media you choose through the Android Photo Picker or document picker. It does not request broad access to all photos, videos, or files on the device.",
             "<strong>Camera</strong> — optional capture of a new photo or video for editing.",
             "<strong>Internet & network state</strong> — to load advertisements (free version) and to communicate with Google Play for purchases.",
             "<strong>Notifications & foreground service</strong> — to show progress while a long job runs in the background, and to notify you when processing finishes.",
