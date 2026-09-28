@@ -1,6 +1,6 @@
 {
   "title": "Privacybeleid — Maskmoji",
-  "updatedLabel": "Laatst bijgewerkt: 26 augustus 2026",
+  "updatedLabel": "Laatst bijgewerkt: 28 september 2026",
   "footer": "© 2026 Pavel Palityka · Maskmoji",
   "fallbackNotice": "",
   "sections": [
@@ -41,7 +41,7 @@
             "<strong>Instellingen en recente lijst</strong> — thema, taal, emoji, maskerstijl en lokale lijst van recente taken op het apparaat.",
             "<strong>Camera-opname</strong> — foto of video via de in-app-camera wordt in de cache op het apparaat bewaard om te bewerken.",
             "<strong>Aankoopstatus</strong> — of Maskmoji Pro via Google Play is ontgrendeld. Google verifieert; op het apparaat bewaren we alleen de Pro-vlag.",
-            "<strong>Advertentiegegevens (gratis versie)</strong> — Appodeal en partners kunnen GAID, IP-adres en interactiegegevens verzamelen (zie Derden)."
+            "<strong>Advertentiegegevens (gratis versie)</strong> — Yandex en partners kunnen GAID, IP-adres en interactiegegevens verzamelen (zie Derden)."
           ]
         },
         {
@@ -98,7 +98,7 @@
         {
           "type": "ul",
           "items": [
-            "<strong>Appodeal</strong> (gratis versie) — advertentiemediatie. Zie <a href=\"https://www.appodeal.com/privacy-policy\" rel=\"noopener\">Appodeal Privacy Policy</a>.",
+            "<strong>Yandex Mobile Ads</strong> (gratis versie) — advertenties. Zie <a href=\"https://yandex.com/legal/international_ads_privacy_policy/en\" rel=\"noopener\">Yandex Ads Privacy Policy</a>.",
             "<strong>Google Play Billing</strong> — in-app-aankopen Maskmoji Pro. Betalingen via Google. Zie <a href=\"https://payments.google.com/payments/apis-secure/get_legal_document?ldl=en_GB&amp;ldo=0&amp;ldt=buyertos\" rel=\"noopener\">Google Play Terms</a>."
           ]
         },
@@ -148,7 +148,7 @@
         },
         {
           "type": "p",
-          "html": "Omdat de meeste gegevens op het apparaat blijven, kunt u app-gegevens wissen of deïnstalleren. Voor advertenties: Android-instellingen en <a href=\"https://www.appodeal.com/privacy-policy\" rel=\"noopener\">Appodeal Privacy Policy</a>. Anders: <a href=\"mailto:pavelpalityka@gmail.com\">pavelpalityka@gmail.com</a>."
+          "html": "Omdat de meeste gegevens op het apparaat blijven, kunt u app-gegevens wissen of deïnstalleren. Voor advertenties: Android-instellingen en <a href=\"https://yandex.com/legal/international_ads_privacy_policy/en\" rel=\"noopener\">Yandex Ads Privacy Policy</a>. Anders: <a href=\"mailto:pavelpalityka@gmail.com\">pavelpalityka@gmail.com</a>."
         }
       ]
     },

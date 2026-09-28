@@ -1,9 +1,4 @@
-#Updated 31.03.2026
-#Appodeal
-appodeal.com, 439467, DIRECT
-#BidMachine
-bidmachine.io,1,DIRECT
-bidmachine.io,466,DIRECT
+#Updated 28.09.2026
 #AdMob — skip until you have your own AdMob publisher ID
 #google.com, Publisher_ID, DIRECT, f08c47fec0942fa0
 #Meta-Audience — skip until you have a Meta Business ID

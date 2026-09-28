@@ -1,6 +1,6 @@
 {
   "title": "Polityka prywatności — Maskmoji",
-  "updatedLabel": "Ostatnia aktualizacja: 26 sierpnia 2026",
+  "updatedLabel": "Ostatnia aktualizacja: 28 września 2026",
   "footer": "© 2026 Pavel Palityka · Maskmoji",
   "fallbackNotice": "",
   "sections": [
@@ -41,7 +41,7 @@
             "<strong>Ustawienia i lista ostatnich</strong> — motyw, język, emoji, styl maski oraz lokalna lista ostatnich prac na urządzeniu.",
             "<strong>Nagranie kamerą</strong> — zdjęcie lub film z kamery w aplikacji trafia do pamięci podręcznej na urządzeniu do edycji.",
             "<strong>Status zakupu</strong> — czy odblokowano Maskmoji Pro przez Google Play. Weryfikację prowadzi Google; na urządzeniu tylko flaga Pro.",
-            "<strong>Dane reklamowe (wersja darmowa)</strong> — Appodeal i sieci partnerskie mogą zbierać GAID, adres IP i dane interakcji (zob. Strony trzecie)."
+            "<strong>Dane reklamowe (wersja darmowa)</strong> — Yandex i sieci partnerskie mogą zbierać GAID, adres IP i dane interakcji (zob. Strony trzecie)."
           ]
         },
         {
@@ -98,7 +98,7 @@
         {
           "type": "ul",
           "items": [
-            "<strong>Appodeal</strong> (wersja darmowa) — mediacja reklamowa. Zobacz <a href=\"https://www.appodeal.com/privacy-policy\" rel=\"noopener\">Appodeal Privacy Policy</a>.",
+            "<strong>Yandex Mobile Ads</strong> (wersja darmowa) — reklama. Zobacz <a href=\"https://yandex.com/legal/international_ads_privacy_policy/en\" rel=\"noopener\">Yandex Ads Privacy Policy</a>.",
             "<strong>Google Play Billing</strong> — zakupy w aplikacji Maskmoji Pro. Płatności obsługuje Google. Zobacz <a href=\"https://payments.google.com/payments/apis-secure/get_legal_document?ldl=en_GB&amp;ldo=0&amp;ldt=buyertos\" rel=\"noopener\">Google Play Terms</a>."
           ]
         },
@@ -148,7 +148,7 @@
         },
         {
           "type": "p",
-          "html": "Ponieważ większość danych jest na urządzeniu, często wystarczy wyczyścić dane lub odinstalować aplikację. Reklamy: ustawienia Androida i <a href=\"https://www.appodeal.com/privacy-policy\" rel=\"noopener\">Appodeal Privacy Policy</a>. Inne: <a href=\"mailto:pavelpalityka@gmail.com\">pavelpalityka@gmail.com</a>."
+          "html": "Ponieważ większość danych jest na urządzeniu, często wystarczy wyczyścić dane lub odinstalować aplikację. Reklamy: ustawienia Androida i <a href=\"https://yandex.com/legal/international_ads_privacy_policy/en\" rel=\"noopener\">Yandex Ads Privacy Policy</a>. Inne: <a href=\"mailto:pavelpalityka@gmail.com\">pavelpalityka@gmail.com</a>."
         }
       ]
     },

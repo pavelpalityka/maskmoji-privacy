@@ -14,7 +14,7 @@ Static multilingual privacy policy for **Google Play Console** and the in-app **
 | `content/uk.json` | Ukrainian |
 | `content/*.json` | Other app locales (English body + localized notice) |
 | `generate_content.py` | Regenerate fallback locales after editing `en.json` |
-| `app-ads.txt` | Appodeal ads.txt (same account as Miraudio) |
+| `app-ads.txt` | ads.txt with Yandex Mobile Ads entries |
 
 ## Google Play
 
@@ -22,8 +22,8 @@ Static multilingual privacy policy for **Google Play Console** and the in-app **
 2. In Play Console → **App content** → **Privacy policy**, paste that URL.
 3. The app uses `https://pavelpalityka.github.io/maskmoji-privacy/` in `AppSettings::privacyPolicyUrl()`.
 
-Required because Maskmoji uses **Appodeal** advertising and **Google Play Billing**.
-The policy mentions **IP address** and **advertising identifier (GAID)** and links to [Appodeal’s privacy policy](https://www.appodeal.com/privacy-policy).
+Required because Maskmoji uses **Yandex Mobile Ads** advertising and **Google Play Billing**.
+The policy mentions **IP address** and **advertising identifier (GAID)** and links to the [Yandex Ads Privacy Policy](https://yandex.com/legal/international_ads_privacy_policy/en).
 
 ## app-ads.txt
 
@@ -32,7 +32,7 @@ Place `app-ads.txt` at the **root of the developer website domain** listed in Go
 `https://pavelpalityka.github.io/app-ads.txt`
 
 Crawlers look at the domain root, not `…/maskmoji-privacy/app-ads.txt`.
-Appodeal account `439467` is included (shared with Miraudio).
+Yandex seller entries are included (`#yandex app-ads` section).
 
 ## Hosting (GitHub Pages)
 
