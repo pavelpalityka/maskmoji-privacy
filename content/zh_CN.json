@@ -36,9 +36,9 @@
         {
           "type": "ul",
           "items": [
-            "<strong>设备上的照片和视频</strong> — 您选择、分享或拍摄的文件。在本地读取和处理。我们不会收到这些媒体的副本。",
-            "<strong>人脸检测数据</strong> — 仅在设备上编辑时使用的框与元数据。本地 ONNX 模型（YuNet）。不会发送给我们。",
-            "<strong>应用设置与最近列表</strong> — 主题、语言、表情、遮罩样式及设备上的最近任务列表。",
+            "<strong>设备上的照片和视频</strong> — 您选择、分享或拍摄的文件。它们在本地读取和处理，以检测人脸并应用遮罩。输出文件保存在您选择的位置（例如相册或您指定的文件夹）。我们不会收到这些媒体的副本。",
+            "<strong>人脸检测数据</strong> — 仅在设备上编辑和视频处理期间使用的边界框与相关元数据。人脸检测使用本地 ONNX 模型（YuNet）。这些数据不会发送给我们。",
+            "<strong>应用设置与最近列表</strong> — 主题、语言、默认表情、遮罩样式及设备上的最近任务列表。",
             "<strong>相机拍摄</strong> — 应用内拍摄的照片或视频保存在设备缓存中以便编辑。",
             "<strong>购买状态</strong> — 是否通过 Google Play 解锁 Maskmoji Pro。由 Google 验证；设备上仅保存 Pro 标志。",
             "<strong>广告数据（免费版）</strong> — Yandex 及其广告网络可能收集广告标识符（GAID）、IP 地址、设备与网络信息及广告互动数据（见第三方）。"
@@ -60,7 +60,7 @@
         {
           "type": "ul",
           "items": [
-            "<strong>读取图片/视频</strong> — 打开您选择的照片和视频。",
+            "<strong>读取图片/视频</strong> — 打开您选择的照片和视频（MediaStore 和系统文档选择器）。",
             "<strong>相机</strong> — 可选拍摄新照片或视频以便编辑。",
             "<strong>互联网与网络状态</strong> — 加载广告（免费版）并与 Google Play 通信以完成购买。",
             "<strong>通知与前台服务</strong> — 后台长时间任务的进度，以及处理完成时的通知。",
@@ -98,8 +98,8 @@
         {
           "type": "ul",
           "items": [
-            "<strong>Yandex Mobile Ads</strong>（免费版）— 广告。可能处理 IP、广告标识符与互动数据。详见 <a href=\"https://yandex.com/legal/international_ads_privacy_policy/en\" rel=\"noopener\">Yandex Ads Privacy Policy</a>。",
-            "<strong>Google Play Billing</strong> — Maskmoji Pro 应用内购买。付款由 Google 处理。详见 <a href=\"https://payments.google.com/payments/apis-secure/get_legal_document?ldl=en_GB&amp;ldo=0&amp;ldt=buyertos\" rel=\"noopener\">Google Play Terms</a>。"
+            "<strong>Yandex Mobile Ads</strong>（免费版）— 广告。Yandex 及其广告合作方可能处理 IP 地址、广告标识符与广告互动数据。详见 <a href=\"https://yandex.com/legal/international_ads_privacy_policy/en\" rel=\"noopener\">Yandex Ads Privacy Policy</a>。您可以在 Google/Android 广告设置中限制个性化广告。",
+            "<strong>Google Play Billing</strong> — Maskmoji Pro 应用内购买。付款与购买记录由 Google 处理。详见 <a href=\"https://payments.google.com/payments/apis-secure/get_legal_document?ldl=en_GB&amp;ldo=0&amp;ldt=buyertos\" rel=\"noopener\">Google Play Terms</a>。"
           ]
         },
         {

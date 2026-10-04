@@ -16,6 +16,10 @@ LANGS = [
     "sl", "sr_Latn", "bs", "mk", "sq", "is", "ca", "ga", "mt", "zh_CN", "ja", "ko", "vi",
 ]
 
+# Locales whose content/zh_CN.json is hand-maintained (full human translation):
+# main() must not overwrite them; keep zh_CN= kwargs in sync manually.
+HAND_MAINTAINED = {"zh_CN"}
+
 YANDEX_ADS = (
     '<a href="https://yandex.com/legal/international_ads_privacy_policy/en" rel="noopener">'
     "Yandex Ads Privacy Policy</a>"
@@ -605,7 +609,8 @@ def build(lang: str) -> dict:
                 "lub nagrywasz. Są odczytywane i przetwarzane lokalnie. Nie otrzymujemy ich kopii."
             ),
             zh_CN=(
-                "<strong>设备上的照片和视频</strong> — 您选择、分享或拍摄的文件。在本地读取和处理。"
+                "<strong>设备上的照片和视频</strong> — 您选择、分享或拍摄的文件。它们在本地读取和处理，"
+                "以检测人脸并应用遮罩。输出文件保存在您选择的位置（例如相册或您指定的文件夹）。"
                 "我们不会收到这些媒体的副本。"
             ),
             ja=(
@@ -665,8 +670,8 @@ def build(lang: str) -> dict:
                 "Lokalny model ONNX (YuNet). Nie są do nas wysyłane."
             ),
             zh_CN=(
-                "<strong>人脸检测数据</strong> — 仅在设备上编辑时使用的框与元数据。本地 ONNX 模型"
-                "（YuNet）。不会发送给我们。"
+                "<strong>人脸检测数据</strong> — 仅在设备上编辑和视频处理期间使用的边界框与相关元数据。"
+                "人脸检测使用本地 ONNX 模型（YuNet）。这些数据不会发送给我们。"
             ),
             ja=(
                 "<strong>顔検出データ</strong> — 端末上の編集時のみ使う枠とメタデータ。ローカル "
@@ -722,7 +727,7 @@ def build(lang: str) -> dict:
                 "<strong>Ustawienia i lista ostatnich</strong> — motyw, język, emoji, styl maski oraz "
                 "lokalna lista ostatnich prac na urządzeniu."
             ),
-            zh_CN="<strong>应用设置与最近列表</strong> — 主题、语言、表情、遮罩样式及设备上的最近任务列表。",
+            zh_CN="<strong>应用设置与最近列表</strong> — 主题、语言、默认表情、遮罩样式及设备上的最近任务列表。",
             ja="<strong>設定と最近の一覧</strong> — テーマ、言語、絵文字、マスクスタイル、端末上の最近の作業一覧。",
             ko="<strong>앱 설정 및 최근 목록</strong> — 테마, 언어, 이모지, 마스크 스타일, 기기의 최근 작업 목록.",
             vi="<strong>Cài đặt và danh sách gần đây</strong> — chủ đề, ngôn ngữ, emoji, kiểu mặt nạ và danh sách công việc gần đây trên thiết bị.",
@@ -973,7 +978,7 @@ def build(lang: str) -> dict:
             pt="<strong>Ler imagens / vídeo</strong> — abrir fotos e vídeos selecionados.",
             nl="<strong>Afbeeldingen / video lezen</strong> — geselecteerde foto’s en video’s openen.",
             pl="<strong>Odczyt obrazów / wideo</strong> — otwieranie wybranych zdjęć i filmów.",
-            zh_CN="<strong>读取图片/视频</strong> — 打开您选择的照片和视频。",
+            zh_CN="<strong>读取图片/视频</strong> — 打开您选择的照片和视频（MediaStore 和系统文档选择器）。",
             ja="<strong>画像/動画の読み取り</strong> — 選択した写真・動画を開くため。",
             ko="<strong>이미지/동영상 읽기</strong> — 선택한 사진·동영상 열기.",
             vi="<strong>Đọc ảnh / video</strong> — mở ảnh và video bạn chọn.",
@@ -1201,8 +1206,9 @@ def build(lang: str) -> dict:
                 f"<strong>Yandex Mobile Ads</strong> (wersja darmowa) — reklama. Zobacz {yandex_link}."
             ),
             zh_CN=(
-                f"<strong>Yandex Mobile Ads</strong>（免费版）— 广告。可能处理 IP、广告标识符与互动数据。"
-                f"详见 {yandex_link}。"
+                f"<strong>Yandex Mobile Ads</strong>（免费版）— 广告。Yandex 及其广告合作方可能处理 "
+                f"IP 地址、广告标识符与广告互动数据。详见 {yandex_link}。"
+                f"您可以在 Google/Android 广告设置中限制个性化广告。"
             ),
             ja=(
                 f"<strong>Yandex Mobile Ads</strong>（無料版）— 広告配信。詳細は {yandex_link}。"
@@ -1254,7 +1260,7 @@ def build(lang: str) -> dict:
                 f"<strong>Google Play Billing</strong> — zakupy w aplikacji Maskmoji Pro. Płatności "
                 f"obsługuje Google. Zobacz {GPLAY}."
             ),
-            zh_CN=f"<strong>Google Play Billing</strong> — Maskmoji Pro 应用内购买。付款由 Google 处理。详见 {GPLAY}。",
+            zh_CN=f"<strong>Google Play Billing</strong> — Maskmoji Pro 应用内购买。付款与购买记录由 Google 处理。详见 {GPLAY}。",
             ja=f"<strong>Google Play Billing</strong> — Maskmoji Pro のアプリ内課金。支払いは Google が処理。{GPLAY}",
             ko=f"<strong>Google Play Billing</strong> — Maskmoji Pro 인앱 결제. 결제는 Google이 처리. {GPLAY}",
             vi=f"<strong>Google Play Billing</strong> — mua Maskmoji Pro trong ứng dụng. Thanh toán do Google xử lý. Xem {GPLAY}.",
@@ -1627,11 +1633,14 @@ def build(lang: str) -> dict:
 def main() -> None:
     CONTENT.mkdir(parents=True, exist_ok=True)
     for lang in LANGS:
+        if lang in HAND_MAINTAINED:
+            print("skip (hand-maintained)", f"{lang}.json")
+            continue
         data = build(lang)
         out = CONTENT / f"{lang}.json"
         out.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print("wrote", out.name)
-    print("done", len(LANGS), "locales")
+    print("done", len(LANGS) - len(HAND_MAINTAINED), "locales")
 
 
 if __name__ == "__main__":
